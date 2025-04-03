@@ -1,4 +1,7 @@
 @import "tailwindcss";
-.classeprova{
-    color: red;
+
+@theme {
+    --color-primary: #8B4513;
+    --color-primary-dark: #6B3000;
+    --color-secondary: #F5F0E8;
 }

@@ -1,3 +1,6 @@
+<?php get_header() ?>
+<!-- PAGE HEADER -->
+ 
 <html>
     <head>
         <title>San Russorio</title>
