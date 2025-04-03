@@ -1,38 +1,39 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    mode: 'development', // Change to 'production' for production builds
-    entry: './src/index.js', // Adjust the entry point as needed
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+  mode: 'development',
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
     },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env'],
-                    },
-                },
-            },
-            {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
-            },
-            {
-                test: /\.(png|jpg|gif|svg)$/,
-                type: 'asset/resource',
-            },
+    port: 3000,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
+        use: [
+          MiniCssExtractPlugin.loader, // Usa MiniCssExtractPlugin invece di style-loader
+          'css-loader',
+          'postcss-loader',
         ],
-    },
-    devtool: 'source-map', // Enable source maps for easier debugging
-    devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        compress: true,
-        port: 9000,
-    },
+      },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'main.css', // Nome del file CSS generato
+    }),
+  ],
 };
