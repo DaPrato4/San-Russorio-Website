@@ -29,6 +29,16 @@ module.exports = {
           'postcss-loader',
         ],
       },
+      {
+        test: /\.js$/, // Aggiunta gestione per i file JavaScript
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
     ],
   },
   plugins: [
