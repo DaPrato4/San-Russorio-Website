@@ -19,8 +19,11 @@
             <!-- Logo a sinistra -->
             <div class="flex items-center">
                 <a href="/" class="text-primary font-bold text-2xl">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo_San_Russorio.png" alt="San Russorio B&B"
-                    class="h-14 w-auto rounded-lg shadow-md transition-transform duration-200 hover:scale-95 active:scale-90">
+                    <?php 
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                        echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="San Russorio B&B" class="h-14 w-auto rounded-lg shadow-md transition-transform duration-200 hover:scale-95 active:scale-90">';
+                    ?>
                 </a>
             </div>
 

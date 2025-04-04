@@ -7,7 +7,12 @@
         <div>
           <a href="/">
             <!-- Logo San Russorio B&B -->
-            <img src="./src/assets/Logo_San_Russorio.png" alt="San Russorio B&B" class="h-10 w-auto mb-4 rounded-lg cursor-pointer transition-transform duration-200 hover:scale-95">
+            <!-- <img src="./src/assets/Logo_San_Russorio.png" alt="San Russorio B&B" class="h-10 w-auto mb-4 rounded-lg cursor-pointer transition-transform duration-200 hover:scale-95"> -->
+            <?php 
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="San Russorio B&B" class="h-10 w-auto mb-4 rounded-lg cursor-pointer transition-transform duration-200 hover:scale-95">';
+            ?>
           </a>
           <p class="text-gray-400 mb-4">
             Vivi l'autentica ospitalità italiana nel nostro incantevole bed and breakfast, situato in una posizione
