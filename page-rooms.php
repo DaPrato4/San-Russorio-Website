@@ -1,0 +1,356 @@
+<?php get_header(); ?>
+<!-- Sezione Hero -->
+<section class="relative h-96">
+  <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 z-10"></div>
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Camere_Hero.jpg" alt="Le Camere" class="absolute inset-0 w-full h-full object-cover" width="1920" height="1080" loading="eager" fetchpriority="high">
+  
+  <div class="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center items-center text-white text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 font-serif">Le Camere</h1>
+    <p class="text-xl md:text-2xl max-w-2xl">Scopri il comfort e l'eleganza delle nostre sistemazioni uniche</p>
+  </div>
+</section>
+
+<!-- Introduzione alle Camere -->
+<section class="py-16 bg-secondary bg-opacity-30">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12 max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-primary mb-6 font-serif">Vivi il vero comfort italiano</h2>
+      <p class="text-gray-700">
+        Ogni nostra camera è arredata in modo unico, valorizzando antichi elementi locali e opere d'arte, per creare un ambiente caldo e accogliente. 
+        Tutte le camere dispongono di letti di alta qualità, bagno privato, aria condizionata e viste mozzafiato sul paesaggio circostante.
+      </p>
+    </div>
+    
+    <!-- Camera 1: Camera Oliva -->
+    <div class="mb-20">
+      <div class="flex flex-col lg:flex-row bg-white rounded-lg shadow-xl overflow-hidden border-t-4 border-primary">
+        <div class="lg:w-1/2">
+          <div class="relative bg-gray-200 h-80 lg:h-full">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Camera_Oliva.jpg" alt="Camera Oliva" class="absolute inset-0 w-full h-full object-cover" width="800" height="600" loading="lazy">
+          </div>
+        </div>
+        <div class="lg:w-1/2 p-8 lg:p-12">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-primary font-serif">Camera Oliva</h3>
+            <span class="text-primary font-bold text-xl">€70 / notte</span>
+          </div>
+          <p class="text-gray-700 mb-6">
+            La Camera Oliva offre un rifugio spazioso con un comodo letto matrimoniale queen size e un balcone privato che si affaccia su un suggestivo uliveto. 
+            L'arredamento in toni verdi e materiali naturali crea un'atmosfera rilassante, ispirata al paesaggio circostante.
+          </p>
+          <div class="mb-8">
+            <h4 class="font-bold text-gray-800 mb-3">Caratteristiche della camera:</h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Letto matrimoniale queen size
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Bagno privato
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Balcone privato
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Aria condizionata
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Wi-Fi gratuito
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Colazione inclusa
+              </li>
+            </ul>
+          </div>
+          <a href="/contact" class="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors duration-300 shadow-md">
+            Prenota questa camera
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Camera 2: Suite del Vigneto -->
+    <div class="mb-20">
+      <div class="flex flex-col lg:flex-row bg-white rounded-lg shadow-xl overflow-hidden border-t-4 border-primary">
+        <div class="lg:w-1/2 order-1 lg:order-2">
+          <div class="relative bg-gray-200 h-80 lg:h-full">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Suite_del_Vigneto.jpg" alt="Suite del Vigneto" class="absolute inset-0 w-full h-full object-cover" width="800" height="600" loading="lazy">
+          </div>
+        </div>
+        <div class="lg:w-1/2 p-8 lg:p-12 order-2 lg:order-1">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-primary font-serif">Suite del Vigneto</h3>
+            <span class="text-primary font-bold text-xl">€120 / notte</span>
+          </div>
+          <p class="text-gray-700 mb-6">
+            La Suite del Vigneto offre un alloggio di lusso con un letto king size, zona salotto separata e una terrazza privata con viste mozzafiato sul vigneto. Gli interni, arricchiti da colori caldi ed eleganti arredi, creano un ambiente sofisticato e confortevole.
+          </p>
+          <div class="mb-8">
+            <h4 class="font-bold text-gray-800 mb-3">Caratteristiche della suite:</h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Letto king size
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Bagno di lusso
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Terrazza privata
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Zona salotto
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Mini frigo
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Colazione premium
+              </li>
+            </ul>
+          </div>
+          <a href="/contact" class="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors duration-300 shadow-md">
+            Prenota questa suite
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Camera 3: Camera Giardino -->
+    <div>
+      <div class="flex flex-col lg:flex-row bg-white rounded-lg shadow-xl overflow-hidden border-t-4 border-primary">
+        <div class="lg:w-1/2">
+          <div class="relative bg-gray-200 h-80 lg:h-full">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Camera_Giardino.jpg" alt="Camera Giardino" class="absolute inset-0 w-full h-full object-cover" width="800" height="600" loading="lazy">
+          </div>
+        </div>
+        <div class="lg:w-1/2 p-8 lg:p-12">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-primary font-serif">Camera Giardino</h3>
+            <span class="text-primary font-bold text-xl">€90 / notte</span>
+          </div>
+          <p class="text-gray-700 mb-6">
+            La Camera Giardino offre un rifugio accogliente con accesso diretto al nostro splendido giardino. Caratterizzata da un letto matrimoniale queen size, arredi luminosi e ariosi e porte-finestra che conducono a un patio privato, è ideale per gustare il caffè del mattino o un calice di vino al tramonto.
+          </p>
+          <div class="mb-8">
+            <h4 class="font-bold text-gray-800 mb-3">Caratteristiche della camera:</h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Letto matrimoniale queen size
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Bagno privato
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Accesso al giardino
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Patio privato
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Wi-Fi gratuito
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Colazione inclusa
+              </li>
+            </ul>
+          </div>
+          <a href="/contact" class="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors duration-300 shadow-md">
+            Prenota questa camera
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sezione Servizi Extra -->
+<section class="py-16 bg-secondary bg-opacity-30">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-primary mb-4 font-serif">Servizi Extra</h2>
+      <p class="text-gray-700">Scopri i servizi aggiuntivi che rendono il tuo soggiorno ancora più speciale al B&B San Russorio</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow-xl p-6 text-center hover:shadow-2xl transition-shadow duration-300 border-b-2 border-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="M6 8h12"/>
+          <path d="M12 8v12"/>
+          <path d="M6 12h3"/>
+          <path d="M15 12h3"/>
+          <path d="M6 16h3"/>
+          <path d="M15 16h3"/>
+        </svg>
+        <h4 class="text-xl font-bold text-primary mt-4 font-serif">Parcheggio Privato</h4>
+        <p class="text-gray-700 mt-2">Ampio parcheggio gratuito per tutti gli ospiti.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-xl p-6 text-center hover:shadow-2xl transition-shadow duration-300 border-b-2 border-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+          <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+          <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+          <circle cx="12" cy="21" r="1" />
+        </svg>
+        <h4 class="text-xl font-bold text-primary mt-4 font-serif">Wi-Fi Veloce</h4>
+        <p class="text-gray-700 mt-2">Connessione internet ad alta velocità in tutta la struttura.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-xl p-6 text-center hover:shadow-2xl transition-shadow duration-300 border-b-2 border-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+          <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+          <rect x="8" y="12" width="8" height="8" rx="1"/>
+          <path d="M12 12v8"/>
+          <path d="M8 16h8"/>
+        </svg>
+        <h4 class="text-xl font-bold text-primary mt-4 font-serif">Area Relax</h4>
+        <p class="text-gray-700 mt-2">Rilassati nel nostro giardino e nelle aree comuni accoglienti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sezione Informazioni Aggiuntive -->
+<section class="py-16 bg-secondary">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-lg shadow-xl p-8 border-l-4 border-primary">
+        <h2 class="text-2xl font-bold text-primary mb-6 font-serif">Informazioni Utili</h2>
+        
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-bold text-gray-800 mb-2">Orari</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                </svg>
+                <span><strong>Check-in:</strong> Dalle 14:00 alle 20:00 (contattaci per arrivi tardivi)</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                </svg>
+                <span><strong>Check-out:</strong> Entro le 11:00</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                </svg>
+                <span><strong>Colazione:</strong> Dalle 7:30 alle 10:00</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-bold text-gray-800 mb-2">Pagamento</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                  <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" />
+                </svg>
+                <span><strong>Metodi di pagamento accettati:</strong> Contanti, Carte di Credito (Visa, MasterCard, American Express), Bonifico Bancario</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                  <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9M4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" />
+                </svg>
+                <span><strong>Deposito:</strong> È richiesto un deposito del 30% per garantire la prenotazione.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sezione FAQ -->
+<section class="py-16">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-primary mb-4 font-serif">Domande Frequenti</h2>
+      <p class="text-gray-700 max-w-2xl mx-auto">Trova qui le risposte alle domande più comuni sulle nostre camere</p>
+    </div>
+    
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-l-2 border-primary">
+        <h3 class="text-xl font-bold text-primary mb-2 font-serif">Posso richiedere un letto aggiuntivo?</h3>
+        <p class="text-gray-700">Sì, è possibile richiedere un letto aggiuntivo o una culla in alcune delle nostre camere, con un piccolo supplemento. Ti preghiamo di contattarci in anticipo per verificare la disponibilità.</p>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-l-2 border-primary">
+        <h3 class="text-xl font-bold text-primary mb-2 font-serif">Le camere sono insonorizzate?</h3>
+        <p class="text-gray-700">Tutte le nostre camere sono dotate di un buon isolamento acustico per garantire il massimo comfort e tranquillità durante il tuo soggiorno.</p>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-l-2 border-primary">
+        <h3 class="text-xl font-bold text-primary mb-2 font-serif">È possibile richiedere il servizio in camera?</h3>
+        <p class="text-gray-700">Offriamo un servizio in camera limitato per la colazione, su richiesta e con un piccolo supplemento. Per altre esigenze, non esitare a contattare il nostro staff.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="text-center py-16">
+  <a href="/contact" class="inline-block bg-primary text-white px-8 py-4 rounded-md hover:bg-primary-dark transition-colors duration-300 shadow-md font-medium text-lg">
+    Prenota il tuo soggiorno ora
+  </a>
+</div>
+
+<?php get_footer(); ?>
