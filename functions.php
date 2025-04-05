@@ -7,9 +7,9 @@ function my_theme_enqueue_script() {
     wp_enqueue_script(
         'mtscript',
         get_template_directory_uri() . '/dist/bundle.js',
-        array(), // Dipendenze (aggiungi 'jquery' se necessario)
+        array(),
         '1.0',
-        true // Carica nel footer
+        true
     );
 }
 

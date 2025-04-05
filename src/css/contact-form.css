@@ -31,8 +31,8 @@ input[type="tel"]:focus {
 input[type="checkbox"] {
     margin-top: 0.25rem;
     margin-right: 0.5rem;
-    margin: 0 8px 0 0; /* Margine a destra per distanziarlo dal testo */
-    width: 16px; /* Dimensione standard */
+    margin: 0 8px 0 0;
+    width: 16px; 
     height: 16px;
     vertical-align: middle;
 }

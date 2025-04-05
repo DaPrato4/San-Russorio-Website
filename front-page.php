@@ -228,44 +228,7 @@
   </div>
 </section>
 
-<!-- Sezione Il Nostro Team -->
-<section class="py-16">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-primary mb-4">Il Nostro Team</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">Conosci le persone che rendono speciale il nostro B&B, sempre pronte a
-        offrirti un servizio eccellente.</p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Membro 1: Giovanni -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border-b-2 border-primary">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Giovanni.jpg" alt="Giovanni - Receptionist"
-          class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary">
-        <h3 class="text-xl font-bold text-primary font-serif">Giovanni</h3>
-        <p class="text-gray-600">Receptionist giovane e motivato con 4 anni di esperienza, sempre pronto ad accoglierti
-          con professionalità.</p>
-      </div>
-      
-      <!-- Membro 2: Norma -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border-b-2 border-primary">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Norma.jpg" alt="Norma - Cuoca"
-          class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary">
-        <h3 class="text-xl font-bold text-primary font-serif">Norma</h3>
-        <p class="text-gray-600">La nostra cuoca, esperta in cucina tradizionale, porta in tavola ricette di famiglia
-          tramandate da generazioni.</p>
-      </div>
-      
-      <!-- Membro 3: Marta -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border-b-2 border-primary">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Marta.jpg" alt="Marta - Housekeeper"
-          class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary">
-        <h3 class="text-xl font-bold text-primary font-serif">Marta</h3>
-        <p class="text-gray-600">Housekeeper con 18 anni di esperienza, attenta ai dettagli per garantire pulizia e
-          comfort in ogni ambiente.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('template-parts/card-member') ?>
 
 <!-- Sezione Servizi -->
 <section class="py-16">
