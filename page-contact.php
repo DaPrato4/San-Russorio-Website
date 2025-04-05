@@ -112,51 +112,23 @@
       <div class="lg:w-2/3">
         <div class="bg-white rounded-lg shadow-lg p-8">
           <h2 class="text-2xl font-bold text-primary mb-6">Invia un Messaggio</h2>
-          
-          <form action="/" method="POST" class="space-y-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label for="first_name" class="block text-gray-700 font-medium mb-2">Nome *</label>
-                <input type="text" id="first_name" name="first_name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-              </div>
-              <div>
-                <label for="last_name" class="block text-gray-700 font-medium mb-2">Cognome *</label>
-                <input type="text" id="last_name" name="last_name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label for="email" class="block text-gray-700 font-medium mb-2">Indirizzo Email *</label>
-                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-              </div>
-              <div>
-                <label for="phone" class="block text-gray-700 font-medium mb-2">Numero di Telefono</label>
-                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-              </div>
-            </div>
-            
-            <div>
-              <label for="subject" class="block text-gray-700 font-medium mb-2">Oggetto *</label>
-              <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-            </div>
-            
-            <div>
-              <label for="message" class="block text-gray-700 font-medium mb-2">Messaggio *</label>
-              <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
-            </div>
-            
-            <div class="flex items-start">
-              <input type="checkbox" id="privacy" name="privacy" required class="mt-1 mr-2">
-              <label for="privacy" class="text-gray-700">Ho letto e accetto l'<a href="#" class="text-primary hover:underline">Informativa sulla Privacy</a> *</label>
-            </div>
-            
-            <div>
-              <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors duration-200 font-medium">
-                Invia Messaggio
-              </button>
-            </div>
-          </form>
+          <?php if (have_posts()) {
+    while (have_posts()) {
+        the_post(); ?>
+
+
+        <!-- PAGE CONTENT -->
+
+        <section class="mt-0">
+
+            <?php the_content() ?>
+
+
+        </section>
+<?php
+    }
+}
+wp_reset_postdata() ?>
         </div>
       </div>
     </div>
