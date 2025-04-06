@@ -109,26 +109,28 @@
       </div>
       
       <!-- Modulo di Contatto -->
-      <div class="lg:w-2/3">
+      <div class="lg:w-2/3 gap-6">
         <div class="bg-white rounded-lg shadow-lg p-8">
           <h2 class="text-2xl font-bold text-primary mb-6">Invia un Messaggio</h2>
-          <?php if (have_posts()) {
-    while (have_posts()) {
-        the_post(); ?>
+          <?php 
+            if (have_posts()) {
+              while (have_posts()) {
+              the_post();
+          ?>
 
 
-        <!-- PAGE CONTENT -->
+          <!-- PAGE CONTENT -->
 
-        <section class="mt-0">
+          <section class="mt-0">
 
-            <?php the_content() ?>
+              <?php the_content() ?>
 
 
-        </section>
-<?php
-    }
-}
-wp_reset_postdata() ?>
+          </section>
+          <?php
+              }
+          }
+          wp_reset_postdata() ?>
         </div>
       </div>
     </div>
