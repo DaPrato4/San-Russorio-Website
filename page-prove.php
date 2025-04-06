@@ -23,7 +23,7 @@
 }
 wp_reset_postdata() ?>
 
-<?php get_template_part('template-parts/card-room') ?>
+<?php get_template_part('template-parts/card-highlighted-room') ?>
 
 <?php get_footer() ?>
 
