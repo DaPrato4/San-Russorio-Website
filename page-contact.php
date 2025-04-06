@@ -201,6 +201,6 @@
 </section>
 
 <!-- Sezione FAQ -->
-<?php get_template_part('template-parts/card-faq') ?>
+<?php get_template_part('template-parts/card-faq', null, 'contatti'); ?>
 
 <?php get_footer(); ?>

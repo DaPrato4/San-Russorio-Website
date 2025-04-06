@@ -117,32 +117,9 @@
   </div>
 </section>
 
+
 <!-- Sezione FAQ -->
-<section class="py-16">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-primary mb-4 font-serif">Domande Frequenti</h2>
-      <p class="text-gray-700 max-w-2xl mx-auto">Trova qui le risposte alle domande più comuni sulle nostre camere</p>
-    </div>
-    
-    <div class="max-w-3xl mx-auto space-y-6">
-      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-l-2 border-primary">
-        <h3 class="text-xl font-bold text-primary mb-2 font-serif">Posso richiedere un letto aggiuntivo?</h3>
-        <p class="text-gray-700">Sì, è possibile richiedere un letto aggiuntivo o una culla in alcune delle nostre camere, con un piccolo supplemento. Ti preghiamo di contattarci in anticipo per verificare la disponibilità.</p>
-      </div>
-      
-      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-l-2 border-primary">
-        <h3 class="text-xl font-bold text-primary mb-2 font-serif">Le camere sono insonorizzate?</h3>
-        <p class="text-gray-700">Tutte le nostre camere sono dotate di un buon isolamento acustico per garantire il massimo comfort e tranquillità durante il tuo soggiorno.</p>
-      </div>
-      
-      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-l-2 border-primary">
-        <h3 class="text-xl font-bold text-primary mb-2 font-serif">È possibile richiedere il servizio in camera?</h3>
-        <p class="text-gray-700">Offriamo un servizio in camera limitato per la colazione, su richiesta e con un piccolo supplemento. Per altre esigenze, non esitare a contattare il nostro staff.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('template-parts/card-faq', null, 'camere'); ?>
 
 <div class="text-center py-16">
   <a href="/contact" class="inline-block bg-primary text-white px-8 py-4 rounded-md hover:bg-primary-dark transition-colors duration-300 shadow-md font-medium text-lg">
