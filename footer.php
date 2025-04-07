@@ -119,20 +119,7 @@
       </div>
     </div>
   </footer>
-
-  <script type="module" src="./src/main.js"></script>
-
-  <!-- Script per il toggle del menu mobile -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-
-      mobileMenuButton.addEventListener('click', function () {
-        mobileMenu.classList.toggle('hidden');
-      });
-    });
-  </script>
+</main>
 </body>
 
 </html>

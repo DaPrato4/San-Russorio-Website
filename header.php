@@ -12,6 +12,7 @@
 </head>
 
 <body <?php body_class()  ?>>
+<main id="swup" class="transition-fade">
 
     <?php if (!is_404()) { ?>
         <header class="bg-white shadow-md py-4 px-6 sticky top-0 z-50">

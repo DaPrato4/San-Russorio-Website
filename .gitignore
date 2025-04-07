@@ -30,3 +30,4 @@ wp-content/cache/
 wp-content/backups/
 
 package-lock.json
+.env

@@ -1,13 +1,26 @@
+import Swup from 'swup';
 
-// Mobile menu toggle
-document.addEventListener('DOMContentLoaded', () => {
-  const mobileMenuButton = document.querySelector('button.md\\:hidden');
-  if (mobileMenuButton) {
-    const mobileMenu = document.getElementById('mobile-menu');
+const swup = new Swup({
+    containers: ['#swup'],
+    animationSelector: '[class*="transition-"]',
+    cache: true,
+    animateHistoryBrowsing: false,
+    animationPhase: 250
+});
+
+function initMobileMenu() {
+  const mobileMenuButton = document.querySelector('#mobile-menu-button');
+  const mobileMenu = document.querySelector('#mobile-menu');
+
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.onclick = null;
+
     mobileMenuButton.addEventListener('click', () => {
-      if (mobileMenu) {
-        mobileMenu.classList.toggle('hidden');
-      }
+      mobileMenu.classList.toggle('hidden');
     });
   }
-});
+}
+
+// Prima inizializzazione
+document.addEventListener('DOMContentLoaded', initMobileMenu);
+swup.hooks.on('page:view', initMobileMenu);

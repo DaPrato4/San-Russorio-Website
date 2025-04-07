@@ -5,7 +5,18 @@
     --color-primary: #8B4513;
     --color-primary-dark: #6B3000;
     --color-secondary: #F5F0E8;
-    
+}
+
+.transition-fade {
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    will-change: transform, opacity;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0.95;
+    transform: translateY(0.3vw) scale(0.99);
 }
 
 
