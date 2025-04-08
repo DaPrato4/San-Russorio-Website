@@ -19,7 +19,7 @@
       <div class="lg:w-1/3">
         <h2 class="text-3xl font-bold text-primary mb-6 font-serif">Contattaci</h2>
         <p class="text-gray-700 mb-8">
-          Hai domande sulle nostre camere, sui servizi o sulla disponibilità? Siamo qui per aiutarti! Contattaci utilizzando le informazioni sottostanti o compila il modulo per inviarci un messaggio.
+            <?php echo esc_attr(get_option('custom_intestazione')); ?>
         </p>
         
         <div class="space-y-6">
@@ -33,9 +33,9 @@
             <div>
               <h3 class="font-bold text-gray-800 mb-1">Indirizzo</h3>
               <p class="text-gray-700">
-                Viale delle Piave, Prima di San Rossore<br>
-                56121 Pisa (PI)<br>
-                Toscana, Italia
+                <?php echo esc_attr(get_option('custom_via')); ?><br>
+                <?php echo esc_attr(get_option('custom_dati_indirizo')); ?><br>
+                <?php echo esc_attr(get_option('custom_regione')); ?><br>
               </p>
             </div>
           </div>
@@ -49,8 +49,8 @@
             <div>
               <h3 class="font-bold text-gray-800 mb-1">Telefono</h3>
               <p class="text-gray-700">
-                +39 0578 123456<br>
-                +39 345 6789012 (Cellulare)
+              <a href="tel:<?php echo esc_attr(get_option('custom_phone_1')); ?>"><?php echo esc_attr(get_option('custom_phone_1')); ?></a><br>
+              <a href="tel:<?php echo esc_attr(get_option('custom_phone_2')); ?>"><?php echo esc_attr(get_option('custom_phone_2')); ?></a>
               </p>
             </div>
           </div>
@@ -64,8 +64,8 @@
             <div>
               <h3 class="font-bold text-gray-800 mb-1">Email</h3>
               <p class="text-gray-700">
-                info@sanrussorio.com<br>
-                bookings@sanrussorio.com
+              <a href="mailto:<?php echo esc_attr(get_option('custom_email_1')); ?>"><?php echo esc_attr(get_option('custom_email_1')); ?></a><br>
+              <a href="mailto:<?php echo esc_attr(get_option('custom_email_2')); ?>"><?php echo esc_attr(get_option('custom_email_2')); ?></a>
               </p>
             </div>
           </div>
@@ -79,8 +79,8 @@
             <div>
               <h3 class="font-bold text-gray-800 mb-1">Orario di Accoglienza</h3>
               <p class="text-gray-700">
-                Lunedì - Domenica: 8:00 - 20:00<br>
-                (Per arrivi tardivi, contattaci in anticipo)
+                <?php echo esc_attr(get_option('custom_orario')); ?><br>
+                <?php echo esc_attr(get_option('custom_orario_infoextra')); ?><br>
               </p>
             </div>
           </div>
