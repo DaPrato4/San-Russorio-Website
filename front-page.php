@@ -59,7 +59,7 @@
 <?php get_template_part('template-parts/card-member') ?>
 
 <!-- Sezione Servizi -->
-<section class="py-16">
+<section class="py-16 bg-secondary">
   <div class="container mx-auto px-6">
     <div class="text-center mb-12">
       <h2 class="text-3xl font-bold text-primary mb-4">I Nostri Servizi</h2>
